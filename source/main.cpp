@@ -33,7 +33,7 @@ int main(int argc, char **argv)
         touchPosition touch;
         hidTouchRead(&touch);
 
-        //if (kDown & KEY_START) break;
+        if (kDown & KEY_START) break;
 
         if (currentState == STATE_MENU)
         {
@@ -74,18 +74,18 @@ int main(int argc, char **argv)
             if (kDown & KEY_SELECT) {
                 resetGameBoard();        // Restart current game
             }
-            else if (kDown & KEY_START) {
+            else if (kDown & KEY_B) {
                 currentState = STATE_MENU;   // Exit to main menu
             }
         }
         else if (currentState == STATE_MULTIPLAYER)
         {
             updateMultiplayer(kDown, touch);
-
+            
             if (kDown & KEY_SELECT) {
                 resetMultiplayerBoard();   // Restart current multiplayer game
             }
-            else if (kDown & KEY_START) {
+            else if (kDown & KEY_B) {
                 currentState = STATE_MENU;   // Exit to main menu
             }
         }

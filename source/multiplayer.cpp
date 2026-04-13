@@ -21,8 +21,8 @@ void initMultiplayer() {
     C2D_TextParse(&mtextControls,   mgameTextBuf, "Controls:\n"
                                             "Left/Right or Joystick: select column\n"
                                             "A or tap bottom screen: drop piece\n"
-                                            "SELECT : restart\n"
-                                            "START  : exit");
+                                            "SELECT: restart\n"
+                                            "B button: exit");
 }
 
 void resetMultiplayerBoard() {

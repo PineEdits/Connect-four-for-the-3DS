@@ -203,8 +203,8 @@ void initGame() {
     C2D_TextParse(&textgControls,   gameTextBuf, "Controls:\n"
                                             "Left/Right or Joystick: select column\n"
                                             "A or tap bottom screen: drop piece\n"
-                                            "SELECT : restart\n"
-                                            "START  : exit");
+                                            "SELECT: restart\n"
+                                            "B button: exit");
 }
 
 void resetGameBoard() {
